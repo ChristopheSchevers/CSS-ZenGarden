@@ -105,6 +105,11 @@ footer a {
 
 /* Media Queries */
 @media only screen and (min-width: 720px) {
+  header {
+    background-attachment: fixed;
+    background-position-y: -300px;
+  }
+
   .summary {
     text-align: center;
   }
@@ -115,6 +120,13 @@ footer a {
   }
 
   .main.supporting {
+    background-color: rgba(238, 238, 238, 0.7);
+    background-blend-mode: color;
+    background-image: url("../images/stones.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: grid;
     grid-template-columns: 1fr 3fr 3fr 1fr;
     grid-template-rows: auto;
@@ -125,9 +137,7 @@ footer a {
   .main.supporting .explanation, .main.supporting .participation, .main.supporting .benefits, .main.supporting .requirements {
     padding-top: 0;
     padding-bottom: 0;
-  }
-  .main.supporting .participation, .main.supporting .requirements {
-    background-color: #eee;
+    background-color: rgba(238, 238, 238, 0.7);
   }
   .main.supporting .explanation {
     grid-area: article1;

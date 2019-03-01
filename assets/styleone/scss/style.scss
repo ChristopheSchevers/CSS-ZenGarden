@@ -127,6 +127,11 @@ footer {
 
 /* Media Queries */
 @media only screen and (min-width: 720px) {
+    header{
+        background-attachment: fixed;
+        background-position-y: -300px;
+    }
+
     .summary {
         text-align: center;
     }
@@ -142,6 +147,16 @@ footer {
 
     
     .main.supporting {
+        background: {
+            color: $main-trans;
+            blend-mode: color;
+            image: url("../images/stones.jpeg");
+            attachment: fixed;
+            position: center;
+            repeat: no-repeat;
+            size: cover;
+        }
+
         display: grid;
         grid-template-columns: 1fr 3fr 3fr 1fr;
         grid-template-rows: auto;
@@ -157,10 +172,7 @@ footer {
                 top: 0;
                 bottom: 0;
             }
-        }
-
-        .participation, .requirements {
-            background-color: $bckgrnd-xlight;
+            background-color: $main-trans;
         }
 
         .explanation {
@@ -183,7 +195,6 @@ footer {
             grid-area: footer;
         }
     }
-
 
     .wrapper {
         display: flex;
