@@ -1,0 +1,66 @@
+// Imports
+@import "partials/base";
+@import "partials/colors";
+@import "partials/typography";
+
+// General
+
+body {
+    background-color: $body-color;
+    font-family: $basic-font;    
+    
+    h3 {
+        font-family: $sub-title;
+    }
+}
+
+/* Banner */
+header {
+    background: {
+        image: url("../images/zen.jpeg");
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+    }
+    height: 50vh;
+    width: 100%;
+    top: 0;
+
+    h1, h2 {
+        text-align: center;
+        position: relative;
+        font-family: $header-font;
+    }
+
+    h1 {
+        top: 20%;
+    }
+
+    h2 {
+        top: 60%;
+    }
+}
+
+.summary {
+    @include box-shadow(0 -5px 10px 10px #333);
+    background-color: $bckgrnd-light;
+    padding: 10px 50px;
+}
+
+.preamble {
+    background-color: $bckgrnd-md;
+    padding: {
+        top: 50px;
+        bottom: 50px;
+    }
+
+    * {
+        padding: {
+            left: 10px;
+            right: 10px;
+        }
+    }
+}
+
+/* Main */
+

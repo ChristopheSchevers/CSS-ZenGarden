@@ -1,0 +1,59 @@
+/* Reset */
+@import url("https://fonts.googleapis.com/css?family=Rock+Salt");
+@import url("https://fonts.googleapis.com/css?family=Laila");
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #3cb371;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body h3 {
+  font-family: "Laila", serif;
+}
+
+/* Banner */
+header {
+  background-image: url("../images/zen.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  top: 0;
+}
+header h1, header h2 {
+  text-align: center;
+  position: relative;
+  font-family: "Rock Salt", cursive;
+}
+header h1 {
+  top: 20%;
+}
+header h2 {
+  top: 60%;
+}
+
+.summary {
+  box-shadow: 0 -5px 10px 10px #333;
+  -moz-box-shadow: 0 -5px 10px 10px #333;
+  -webkit-box-shadow: 0 -5px 10px 10px #333;
+  background-color: #dcdcdc;
+  padding: 10px 50px;
+}
+
+.preamble {
+  background-color: #a9a9a9;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.preamble * {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Main */
+
+/*# sourceMappingURL=style.css.map */
