@@ -43,7 +43,7 @@ header {
 }
 
 .summary {
-    @include box-shadow(0 -5px 10px 10px #333);
+    @include box-shadow(0 -3px 20px 10px #666);
     background-color: $bckgrnd-light;
     padding: 10px 50px;
 }
@@ -122,5 +122,74 @@ footer {
 
     ul {
         list-style-type: none;
+    }
+}
+
+/* Media Queries */
+@media only screen and (min-width: 720px) {
+    .summary {
+        text-align: center;
+    }
+
+    .preamble {
+        h3, p {
+            padding: {
+                left: 10%;
+                right: 10%;
+            }
+        }
+    }
+
+    
+    .main.supporting {
+        display: grid;
+        grid-template-columns: 1fr 3fr 3fr 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;
+        grid-template-areas: 
+        ". article1 article2 ."
+        ". article3 article4 ."
+        "footer footer footer footer";
+
+        .explanation, .participation, .benefits, .requirements {
+            padding: {
+                top: 0;
+                bottom: 0;
+            }
+        }
+
+        .participation, .requirements {
+            background-color: $bckgrnd-xlight;
+        }
+
+        .explanation {
+            grid-area: article1;
+        }
+    
+        .participation {
+            grid-area: article3;
+        }
+    
+        .benefits {
+            grid-area: article2;
+        }
+    
+        .requirements {
+            grid-area: article4;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+    }
+
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 0.8em;
+        padding-bottom: 20px;
     }
 }

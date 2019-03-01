@@ -4,10 +4,11 @@
 body, html {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 body {
-  background-color: #3cb371;
+  background-color: #eee;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body h3 {
@@ -38,15 +39,15 @@ header h2 {
 }
 
 .summary {
-  box-shadow: 0 -5px 10px 10px #333;
-  -moz-box-shadow: 0 -5px 10px 10px #333;
-  -webkit-box-shadow: 0 -5px 10px 10px #333;
-  background-color: #dcdcdc;
+  box-shadow: 0 -3px 20px 10px #666;
+  -moz-box-shadow: 0 -3px 20px 10px #666;
+  -webkit-box-shadow: 0 -3px 20px 10px #666;
+  background-color: #dcdddc;
   padding: 10px 50px;
 }
 
 .preamble {
-  background-color: #a9a9a9;
+  background-color: #a1aaa1;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -68,12 +69,12 @@ header h2 {
   background-color: #eee;
 }
 .main.supporting .participation, .main.supporting .requirements {
-  background-color: #dcdcdc;
+  background-color: #dcdddc;
 }
 
 /* Footer */
 footer, .sidebar {
-  background-color: #333;
+  background-color: #333433;
   color: #ddd;
 }
 footer a, .sidebar a {
@@ -103,6 +104,54 @@ footer a {
 }
 
 /* Media Queries */
+@media only screen and (min-width: 720px) {
+  .summary {
+    text-align: center;
+  }
 
+  .preamble h3, .preamble p {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .main.supporting {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+    grid-template-areas: ". article1 article2 ." ". article3 article4 ." "footer footer footer footer";
+  }
+  .main.supporting .explanation, .main.supporting .participation, .main.supporting .benefits, .main.supporting .requirements {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .main.supporting .participation, .main.supporting .requirements {
+    background-color: #eee;
+  }
+  .main.supporting .explanation {
+    grid-area: article1;
+  }
+  .main.supporting .participation {
+    grid-area: article3;
+  }
+  .main.supporting .benefits {
+    grid-area: article2;
+  }
+  .main.supporting .requirements {
+    grid-area: article4;
+  }
+  .main.supporting footer {
+    grid-area: footer;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 0.8em;
+    padding-bottom: 20px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
