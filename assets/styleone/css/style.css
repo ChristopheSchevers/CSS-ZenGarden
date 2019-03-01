@@ -31,6 +31,7 @@ header h1, header h2 {
 }
 header h1 {
   top: 20%;
+  margin: 0;
 }
 header h2 {
   top: 60%;
@@ -55,5 +56,53 @@ header h2 {
 }
 
 /* Main */
+.main.supporting .explanation, .main.supporting .participation, .main.supporting .benefits, .main.supporting .requirements {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.main.supporting .explanation *, .main.supporting .participation *, .main.supporting .benefits *, .main.supporting .requirements * {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.main.supporting .explanation, .main.supporting .benefits {
+  background-color: #eee;
+}
+.main.supporting .participation, .main.supporting .requirements {
+  background-color: #dcdcdc;
+}
+
+/* Footer */
+footer, .sidebar {
+  background-color: #333;
+  color: #ddd;
+}
+footer a, .sidebar a {
+  text-decoration: none;
+  color: #eee;
+  font-weight: 600;
+}
+
+footer {
+  padding-top: 20px;
+  text-align: center;
+}
+footer a {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.wrapper {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.wrapper h3 {
+  padding-left: 10px;
+}
+.wrapper ul {
+  list-style-type: none;
+}
+
+/* Media Queries */
+
 
 /*# sourceMappingURL=style.css.map */
