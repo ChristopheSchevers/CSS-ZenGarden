@@ -24,8 +24,7 @@ header {
     }
     height: 50vh;
     width: 100%;
-    top: 0;
-
+    
     h1, h2 {
         text-align: center;
         position: relative;
@@ -38,7 +37,7 @@ header {
     }
 
     h2 {
-        top: 60%;
+        top: 40%;
     }
 }
 
@@ -128,8 +127,10 @@ footer {
 /* Media Queries */
 @media only screen and (min-width: 720px) {
     header{
-        background-attachment: fixed;
-        background-position-y: -430px;
+        background: {
+            attachment: fixed;
+            position-y: 145%;
+        }
     }
 
     .summary {
